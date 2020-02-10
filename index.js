@@ -59,7 +59,7 @@ server.get(`/api/users/:id`, (req, res) => {
   }
 });
 
-server.delete(`api/users/:id`, (req, res) => {
+server.delete(`/api/users/:id`, (req, res) => {
   const { id } = req.params;
 
   Users.remove(id)
